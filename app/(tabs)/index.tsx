@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform, SafeAreaView } from "react-native";
+import { Image, StyleSheet, Text, SafeAreaView, View } from "react-native";
 
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
@@ -6,7 +6,13 @@ import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 
 export default function HomeScreen() {
-  return <SafeAreaView></SafeAreaView>;
+  return (
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="flex-1">
+        <Text>test</Text>
+      </View>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
