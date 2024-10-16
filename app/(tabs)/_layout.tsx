@@ -28,15 +28,6 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="add"
-        options={{
-          title: "Pedido",
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name={"add-circle"} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="profile"
         options={{
           title: "Perfil",
