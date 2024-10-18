@@ -1,11 +1,34 @@
-import { Image, StyleSheet, Text, SafeAreaView, View } from "react-native";
+import { useRouter } from "expo-router";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  View,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 
 export default function HomeScreen() {
+  const router = useRouter();
   return (
     <SafeAreaView className="flex-1 bg-white">
-      <View className="flex-1">
-        <Text>test</Text>
-      </View>
+      <TouchableOpacity
+        onPress={() => {
+          router.push("/(createRequest)");
+        }}
+      >
+        <Text>Criar pedido</Text>
+      </TouchableOpacity>
+      <FlatList
+        className="flex-1"
+        data={[1, 2, 3, 4]}
+        renderItem={() => (
+          <View>
+            <Text>Test</Text>
+          </View>
+        )}
+      />
     </SafeAreaView>
   );
 }

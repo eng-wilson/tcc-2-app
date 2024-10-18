@@ -3,15 +3,18 @@ import { View, Text, TouchableOpacity } from "react-native";
 
 // import { Container } from './styles';
 
-const CreateRequest = () => {
+const TakePhoto = () => {
   return (
     <View className="flex-1 bg-white">
-      <Text>O que está acontecendo?</Text>
+      <Text>Tire uma foto do problema</Text>
       <TouchableOpacity>
-        <Text>Continuar</Text>
+        <Text>Abrir câmera</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text>Escolher da galeria</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default CreateRequest;
+export default TakePhoto;
